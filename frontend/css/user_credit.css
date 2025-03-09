@@ -1,0 +1,36 @@
+.request-form {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  #credits {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .request-history {
+    margin-top: 40px;
+  }
+  
+  #requestStatus {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+  
+  .status-approved {
+    color: #155724;
+    background: #d4edda;
+  }
+  
+  .status-pending {
+    color: #856404;
+    background: #fff3cd;
+  }
+  
+  .status-rejected {
+    color: #721c24;
+    background: #f8d7da;
+  }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="./css/User_Management.css">
+
+</head>
+<body>
+
+    <div id="creditModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Update User Credits</h3>
+            <form id="creditForm">
+                <div class="form-group">
+                    <label for="credits">New Credit Amount:</label>
+                    <input type="number" id="credits" name="credits" min="0" required>
+                </div>
+                <button type="submit" class="save-btn">Update Credits</button>
+            </form>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h2>Admin Menu</h2>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="admin_credit.html">Credit Requests</a></li>
+                <li><a href="admin_users.html" class="active">User Management</a></li>
+                <li><a href="admin_analytics.html">Analytics</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="container">
+        <h2>User Management</h2>
+        
+        
+        <div class="add-user-section">
+            <h3>Add New User</h3>
+            <form id="addUserForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="add-user-btn">Add User</button>
+            </form>
+        </div>
+
+        <h3>All Users</h3>
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Credits</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="usersTableBody">
+                <!-- Users will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/User_Management.js"></script>
+</body>
+</html>

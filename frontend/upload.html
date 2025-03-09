@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/document_upload.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="upload.html" class="active">Upload Document</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="scans.html">Past Scans</a></li>
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Upload Document for Scanning</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="document">Choose a document:</label>
+                <input type="file" id="document" name="document" required>
+                <button type="submit">Upload</button>
+            </form>
+            <p id="message"></p>
+        </main>
+    </div>
+    <script src="js/upload.js"></script>
+</body>
+</html>

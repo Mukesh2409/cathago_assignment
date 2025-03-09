@@ -1,0 +1,14 @@
+.container {
+    max-width: 10000px;
+    margin: 0 auto;
+  }
+  
+  #viewMatches {
+    color: #de5e04;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #viewMatches:hover {
+    text-decoration: underline;
+  }

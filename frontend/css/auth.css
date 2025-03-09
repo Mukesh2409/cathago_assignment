@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+   background-image: url(../images/authbackground.avif);
+}
+
+.auth-container {
+  width: 500px;
+  margin: 90px auto;
+  padding: 40px;
+  background-image: url(../images/authbackground.avif);
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  height: 42px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  background: #efefef;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #d25904;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 5px rgba(210, 89, 4, 0.3);
+}
+
+button[type="submit"] {
+  background-color: #de5e04;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #d25904;
+}
+
+p {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 16px;
+  color: white;
+}
+
+a {
+  color: #d25904;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 688px) {
+  .auth-container {
+    width: 90%;
+    margin: 45px auto;
+    padding: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  button[type="submit"] {
+    padding: 12px;
+    font-size: 15px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+}

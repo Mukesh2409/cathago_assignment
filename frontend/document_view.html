@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document View</title>
+    <link rel="stylesheet" href="./css/document_view.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Document Details</h1>
+        <p><strong>Document ID:</strong> <span id="docId"></span></p>
+        <p><strong>File Name:</strong> <span id="fileName"></span></p>
+        <pre id="documentContent">Loading...</pre> 
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+        
+            const urlParams = new URLSearchParams(window.location.search);
+            const docId = urlParams.get("docId");
+
+            if (!docId) {
+                alert("Invalid document ID.");
+                window.location.href = "scans.html"; 
+                return;
+            }
+
+            document.getElementById("docId").textContent = docId;
+
+            try {
+                const response = await fetch(`/user/document/${docId}`, {
+                    headers: { "Content-Type": "application/json" },
+                    credentials: "include",
+                });
+
+                const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(data.message || "Failed to fetch document");
+                }
+
+                document.getElementById("fileName").textContent = data.fileName || "Unknown File";
+                document.getElementById("documentContent").textContent = data.content || "No content available.";
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById("documentContent").textContent = "Error loading document.";
+            }
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

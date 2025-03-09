@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Scans</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/scans.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="upload.html">Upload Document</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="scans.html" class="active">Past Scans</a></li>
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="logout.html" id="logout">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Past Scans</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Document ID</th>
+                        <th>File Name</th>
+                        <th>Date</th>
+                        <th>View Matches</th>
+                    </tr>
+                </thead>
+                <tbody id="scansTableBody">
+                    <!-- Past scans will be loaded dynamically -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="js/scans.js"></script>
+</body>
+</html>

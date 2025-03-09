@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/user_profile.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="upload.html">Upload Document</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="scans.html">Past Scans</a></li>
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>User Profile</h1>
+            <div class="profile-info">
+                <p><strong>Username:</strong> <span id="username"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Available Credits:</strong> <span id="credits"></span></p>
+            </div>
+            <h2>Past Scans</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Document Name</th>
+                        <th>Date Scanned</th>
+                        <th>Matches Found</th>
+                    </tr>
+                </thead>
+                <tbody id="scansTableBody">
+                </tbody>
+            </table>
+            <div id="credit-status"></div>
+        </main>
+    </div>
+    <script src="js/userprofile.js"></script>
+</body>
+</html>

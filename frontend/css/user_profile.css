@@ -1,0 +1,25 @@
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .profile-info {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .profile-info p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #34495e;
+  }
+  
+  #credit-status {
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: #e9ecef;
+  }

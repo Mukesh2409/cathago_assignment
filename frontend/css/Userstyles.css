@@ -1,0 +1,40 @@
+
+.dashboard header h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+    border-bottom: 2px solid #de5e04;
+    padding-bottom: 10px;
+}
+
+#recentScans tr td:first-child {
+    font-weight: 500;
+    color: #34495e;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.status-matches {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-none {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+@media (max-width: 768px) {
+    .dashboard header h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    #recentScans td {
+        padding: 12px;
+    }
+}

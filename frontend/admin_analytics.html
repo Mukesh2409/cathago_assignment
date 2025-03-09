@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Analytics</title>
+    <link rel="stylesheet" href="./css/admin_common.css">
+    <link rel="stylesheet" href="./css/admin_analytics.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2>Admin Menu</h2>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html">Dashboard</a></li>
+                <li><a href="admin_credit.html">Credit Requests</a></li>
+                <li><a href="admin_users.html" >User Management</a></li>
+                <li><a href="admin_analytics.html" class="active">Analytics</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="container">
+        <h2>Usage Analytics</h2>
+
+        <div class="analytics-section">
+            <div class="analytics-card">
+                <h3>Total Users</h3>
+                <p id="totalUsers">0</p>
+            </div>
+
+            <div class="analytics-card">
+                <h3>Credits Issued</h3>
+                <p id="creditsIssued">0</p>
+            </div>
+
+            <div class="analytics-card">
+                <h3>Documents Scanned</h3>
+                <p id="documentsScanned">0</p>
+            </div>
+        </div>
+
+        <h3>Recent Activity</h3>
+        <table class="analytics-table">
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>Activity</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="recentActivity">
+                <!-- Dynamic data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/admin_analytics.js"></script>
+</body>
+</html>

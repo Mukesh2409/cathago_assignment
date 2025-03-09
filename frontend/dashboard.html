@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/Userstyles.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="upload.html">Upload Document</a></li>
+                <li><a href="scans.html">Past Scans</a></li>
+                <li><a href="credits.html">Request Credits</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <header>
+                <h1>Welcome, User</h1> 
+            </header>
+            <section class="dashboard">
+                <h2>Recent Scans</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Document Name</th>
+                            <th>Date</th>
+                            <th>Matches Found</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recentScans">
+                        <!-- Scans will be dynamically populated by JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

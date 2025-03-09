@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./css/admin_common.css">
+    <link rel="stylesheet" href="./css/Adminstyles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2>Admin Menu</h2>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="admin_credit.html">Credit Requests</a></li>
+                <li><a href="admin_users.html" >User Management</a></li>
+                <li><a href="admin_analytics.html">Analytics</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <h3>Pending Credit Requests</h3>
+        <table class="credit-requests-table">
+            <thead>
+                <tr>
+                    <th>Request Id</th>
+                    <th>Requested Credits</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JohnDoe</td>
+                    <td>10</td>
+                    <td>Pending</td>
+                    <td>
+                        <button class="approve-btn">Approve</button>
+                        <button class="deny-btn">Deny</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Usage Analytics</h3>
+        <p>Analytics data will be displayed here...</p>
+    </div>
+    <script src="./js/admin_dashboard.js"></script>
+</body>
+</html>
