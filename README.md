@@ -38,4 +38,7 @@ git clone https://github.com/Mukesh2409/cathago_assignment.git
 cd cathago_assignment
 cd backend
 node server.js
+Admin username: admin   
+password: admin123
+users can signup
 
